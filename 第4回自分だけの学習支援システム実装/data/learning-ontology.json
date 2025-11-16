@@ -1,0 +1,129 @@
+{
+  "concepts": {
+    "programming": {
+      "label": "プログラミング",
+      "level": "beginner",
+      "subConcepts": ["variables", "functions", "loops", "conditionals"],
+      "prerequisites": [],
+      "relatedConcepts": ["computer-science", "algorithms"],
+      "description": "コンピュータプログラムの作成技術"
+    },
+    "variables": {
+      "label": "変数",
+      "level": "beginner",
+      "subConcepts": ["data-types", "scope"],
+      "prerequisites": [],
+      "relatedConcepts": ["memory", "assignment"],
+      "description": "データを格納するための名前付きの場所"
+    },
+    "functions": {
+      "label": "関数",
+      "level": "intermediate",
+      "subConcepts": ["parameters", "return-values", "recursion"],
+      "prerequisites": ["variables"],
+      "relatedConcepts": ["procedures", "methods", "abstraction"],
+      "description": "再利用可能なコードブロック"
+    },
+    "data-structures": {
+      "label": "データ構造",
+      "level": "intermediate",
+      "subConcepts": ["arrays", "linked-lists", "trees", "graphs"],
+      "prerequisites": ["programming", "variables"],
+      "relatedConcepts": ["algorithms", "complexity"],
+      "description": "データを効率的に格納・操作する方法"
+    },
+    "algorithms": {
+      "label": "アルゴリズム",
+      "level": "intermediate",
+      "subConcepts": ["sorting", "searching", "recursion"],
+      "prerequisites": ["programming", "functions"],
+      "relatedConcepts": ["data-structures", "complexity"],
+      "description": "問題解決の手順"
+    },
+    "object-oriented": {
+    "label": "オブジェクト指向",
+    "level": "intermediate",
+    "subConcepts": ["classes", "inheritance", "polymorphism"],
+    "prerequisites": ["functions", "data-structures"],
+    "relatedConcepts": ["abstraction", "encapsulation"],
+    "description": "オブジェクトを中心としたプログラミング手法"
+    },
+    "illustration": {
+  "label": "イラスト",
+  "level": "beginner",
+  "subConcepts": ["sketch", "coloring", "composition"],
+  "prerequisites": ["observation", "creativity"],
+  "relatedConcepts": ["design", "expression"],
+  "description": "絵や線、色を使って視覚的に表現する芸術活動"
+},
+
+"basketball": {
+  "label": "バスケットボール",
+  "level": "intermediate",
+  "subConcepts": ["dribbling", "shooting", "defense"],
+  "prerequisites": ["teamwork", "physical-strength"],
+  "relatedConcepts": ["sportsmanship", "strategy"],
+  "description": "チームでボールを扱い、得点を競うスポーツ。瞬発力と協力が求められる"
+},
+
+"anime": {
+  "label": "アニメ",
+  "level": "beginner",
+  "subConcepts": ["storyboard", "character-design", "animation"],
+  "prerequisites": ["drawing", "storytelling"],
+  "relatedConcepts": ["manga", "voice-acting"],
+  "description": "絵を動かして物語を表現する映像作品。日本文化の一つとして世界的に人気"
+}
+  },
+  "relations": [
+    {
+      "from": "variables",
+      "to": "functions",
+      "type": "prerequisite",
+      "strength": 0.8
+    },
+    {
+      "from": "functions",
+      "to": "recursion",
+      "type": "prerequisite",
+      "strength": 0.9
+    },
+    {
+      "from": "programming",
+      "to": "data-structures",
+      "type": "prerequisite",
+      "strength": 0.7
+    },
+    {
+      "from": "algorithms",
+      "to": "data-structures",
+      "type": "related",
+      "strength": 0.9
+    },
+    {
+        "from": "functions",
+        "to": "object-oriented",
+        "type": "prerequisite",
+        "strength": 0.8
+    },
+  {
+    "from": "illustration",
+    "to": "anime",
+    "type": "prerequisite",
+    "strength": 0.9
+  },
+  {
+    "from": "anime",
+    "to": "basketball",
+    "type": "inspired",
+    "strength": 0.7
+  },
+  {
+    "from": "sports",
+    "to": "basketball",
+    "type": "category",
+    "strength": 1.0
+  }
+  
+  ]
+}
